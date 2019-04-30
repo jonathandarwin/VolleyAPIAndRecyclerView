@@ -33,5 +33,19 @@ Before we send a request, we should prepare the request.
 The request specification will be written in "request" variable that has "JsonObjectRequest" type.
 the parameter of JsonObjectRequest : 
 (method, route/endpoint, parameter that will be pass to web service, listener if success, listener if failed)
+
+        Method           = POST / GET / PUT / DELETE / ... according to endpoint
+        Endpoint         = The data source (where we can obtain the data)
+        Listener Success = The Listener that will be triggered when we obtain the data from endpoint
+        Listener Error   = The Listener that will be triggered if any error occur during the request
+
 When the data is arrived without error, it will trigger the listener on the fourth parameter (onResponse).
 If the request catch some error, it will trigger the listener on the fifth parameter (OnErrorResponse).
+
+After preparing the specificatoin, we need to send the request. To send the request, we need this 2 line of code :
+
+        RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
+        requestQueue.add(request);
+
+Response has JSON type. JSON (JavaScript Object Notation) is used to represent data in many programming language.
+We know that we cannot passing data from one programming language to other programming language by using primitive data type (original data type from programming language). To make exchange data in other programming language become possible, we use the JSON data type because we can say that JSON is the national data type (data type that is known by all the programming language). JSON is basically a set of string.
