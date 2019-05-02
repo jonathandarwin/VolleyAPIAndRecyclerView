@@ -3,7 +3,7 @@ In this Bootcamp, we learn how to get data from Web Service using Volley and dis
 
 ## Volley
 Volley is used when we want to get the data from Web Service.
-The basic is when we request data from Web Service, we don't know when the data returned. To handle this unpredictable event, we used background thread, so it won't block the main thread.
+The basic is when we request data from Web Service, we don't know when the data returned. To handle this unpredictable event, we used background thread that run together with the main thread, so it won't block the main thread.
 There are several method to do dan handle request in android development : Volley, Async Task, and Retrovit. But in this bootcamp, we use volley :)
 
 Let's see example below :
