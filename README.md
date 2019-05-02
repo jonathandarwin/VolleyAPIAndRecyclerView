@@ -48,4 +48,4 @@ After preparing the specificatoin, we need to send the request. To send the requ
         requestQueue.add(request);
 
 Response has JSON type. JSON (JavaScript Object Notation) is used to represent data in many programming language.
-We know that we cannot passing data from one programming language to other programming language by using primitive data type (original data type from programming language). To make exchange data in other programming language become possible, we use the JSON data type because we can say that JSON is the national data type (data type that is known by all the programming language). JSON is basically a set of string.
+We know that we cannot passing data from one programming language to other programming language by using primitive data type (original data type from programming language). To make exchange data in other programming language become possible, we use the JSON data type because simply we can say that JSON is the "global" data type (data type that is known by all the programming language). JSON is basically a set of string.
